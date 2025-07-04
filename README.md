@@ -12,7 +12,7 @@ Aplikasi **IndiHome Eazy** merupakan platform pengelola perangkat rumah pintar (
 
 ## 🛠️ Metodologi Analisis
 Analisis ini dilakukan melalui beberapa tahapan utama:
-1.  **Data Gathering:** Mengambil 5.000 ulasan terbaru dari Google Play Store menggunakan library `google-play-scraper`.
+1.  **Data Gathering:** Mengambil lebih dari 900 ulasan terbaru dari Google Play Store menggunakan library `google-play-scraper`.
 2.  **Data Preprocessing:** Membersihkan teks ulasan melalui proses *case folding*, *tokenizing*, *stopword removal* (Sastrawi), *stemming* (Sastrawi), dan normalisasi kata tidak baku.
 3.  **Analisis Sentimen:** Memberi label sentimen (positif, netral, negatif) pada setiap ulasan berdasarkan skor rating yang diberikan pengguna.
 4.  **Exploratory Data Analysis (EDA):** Melakukan visualisasi data untuk memahami distribusi sentimen, tren ulasan dari waktu ke waktu, dan kata-kata yang paling sering muncul.
