@@ -2,15 +2,15 @@
 
 Repositori ini berisi analisis studi kasus untuk memahami sentimen dan topik utama dari ulasan pengguna aplikasi **IndiHome Eazy** di Google Play Store. Analisis ini bertujuan untuk mengubah ribuan ulasan kualitatif menjadi *insight* bisnis yang *actionable*, mengidentifikasi *pain points* pengguna, serta merumuskan rekomendasi strategis untuk peningkatan produk.
 
-## 📍 Latar Belakang
+## Latar Belakang
 Aplikasi **IndiHome Eazy** merupakan platform pengelola perangkat rumah pintar (khususnya CCTV) dari PT Telkom Indonesia. Seperti aplikasi lainnya, IndiHome Eazy menerima beragam ulasan di Google Play Store, mulai dari pujian hingga keluhan teknis. Studi ini menggunakan data ulasan tersebut untuk menggali wawasan mendalam mengenai pengalaman pengguna (UX) dan mengidentifikasi area perbaikan yang paling krusial.
 
-## 🎯 Tujuan Analisis
+## Tujuan Analisis
 1.  **Menganalisis Sentimen Pengguna:** Mengklasifikasikan ulasan ke dalam kategori positif, netral, dan negatif untuk mengukur tingkat kepuasan secara umum.
 2.  **Mengidentifikasi Pola Keluhan dan Pujian:** Menggunakan *Natural Language Processing (NLP)* dan *Topic Modeling (LDA)* untuk menemukan tema-tema utama yang dibicarakan pengguna.
 3.  **Merumuskan Rekomendasi Strategis:** Menyusun saran perbaikan produk yang berbasis data untuk tim produk, developer, dan *customer support*.
 
-## 🛠️ Metodologi Analisis
+## Metodologi Analisis
 Analisis ini dilakukan melalui beberapa tahapan utama:
 1.  **Data Gathering:** Mengambil lebih dari 900 ulasan terbaru dari Google Play Store menggunakan library `google-play-scraper`.
 2.  **Data Preprocessing:** Membersihkan teks ulasan melalui proses *case folding*, *tokenizing*, *stopword removal* (Sastrawi), *stemming* (Sastrawi), dan normalisasi kata tidak baku.
@@ -18,7 +18,7 @@ Analisis ini dilakukan melalui beberapa tahapan utama:
 4.  **Exploratory Data Analysis (EDA):** Melakukan visualisasi data untuk memahami distribusi sentimen, tren ulasan dari waktu ke waktu, dan kata-kata yang paling sering muncul.
 5.  **Topic Modeling:** Menerapkan *Latent Dirichlet Allocation (LDA)* untuk mengekstrak 5 topik utama yang paling sering dibahas dalam ulasan.
 
-## 📊 Hasil Analisis & Visualisasi Utama
+## Hasil Analisis & Visualisasi Utama
 
 ### 1. Distribusi Sentimen Pengguna
 Distribusi menunjukkan bahwa meskipun ulasan positif mendominasi, jumlah ulasan negatif (rating 1-2) sangat signifikan. Ini mengindikasikan adanya masalah serius yang dihadapi oleh sebagian besar pengguna. Ulasan netral (rating 3) memiliki jumlah paling sedikit, menunjukkan polarisasi pengalaman pengguna.
@@ -46,7 +46,7 @@ LDA berhasil mengidentifikasi 5 topik utama dari seluruh ulasan:
 *   **Topik 4: Kinerja & Kelancaran**
     *   Membahas performa umum aplikasi, termasuk kelambatan dan koneksi. (Kata kunci: `lambat`, `jaring`, `koneksi`, `lama`, `mohon`).
 
-## 🧠 Insight Bisnis & Rekomendasi Strategis
+## Insight Bisnis & Rekomendasi Strategis
 
 | Aspek Strategis | Insight Kunci dari Data | Rekomendasi Aksi |
 | :--- | :--- | :--- |
@@ -55,7 +55,7 @@ LDA berhasil mengidentifikasi 5 topik utama dari seluruh ulasan:
 | **3. Manajemen Reputasi** | Ulasan negatif yang tidak direspons memperburuk frustrasi dan merusak citra merek. | **Alokasikan Tim Respons Cepat.** Balas ulasan (terutama yang negatif) di Play Store dalam <24 jam. Tawarkan solusi atau eskalasi, tunjukkan bahwa *feedback* didengar. |
 | **4. Peningkatan Rating** | Pengguna yang puas memuji kemudahan (`mudah`) dan manfaat (`bantu`) aplikasi. | **Implementasikan *In-App Rating Prompt* Cerdas.** Minta rating **hanya setelah** pengguna berhasil melakukan aksi positif (misal: berhasil melihat rekaman), bukan saat membuka aplikasi. |
 
-## ⚙️ Teknologi & Library yang Digunakan
+## Teknologi & Library yang Digunakan
 *   **Bahasa**: Python
 *   **Library Utama**:
     *   `pandas` & `numpy`: Manipulasi dan analisis data.
