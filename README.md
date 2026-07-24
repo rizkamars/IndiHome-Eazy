@@ -64,3 +64,5 @@ LDA berhasil mengidentifikasi 5 topik utama dari seluruh ulasan:
     *   `scikit-learn`: TF-IDF Vectorizer.
     *   `gensim`: Implementasi LDA (*Latent Dirichlet Allocation*).
     *   `matplotlib`, `seaborn`, `wordcloud`: Visualisasi data.
+ 
+https://colab.research.google.com/drive/1btCeVtJevx2acjuwUNJO7yfRIQVU3nbE?usp=sharing
